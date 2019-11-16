@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PJSrenovation.jnlp">
+  <information>
+    <title>PJSrenovation</title>
+    <vendor>Admin</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\PJSrenovation-Preloader.jar" size="3093" download="progress" />
+    <jar href="PJSrenovation.jar" size="14843" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PJSrenovation" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="pjsrenovation.PJSrenovation"  name="PJSrenovation"  preloader-class="pjsrenovation.preloader.PJSrenovation_Preloader"/>
+  <update check="always"/>
+</jnlp>
